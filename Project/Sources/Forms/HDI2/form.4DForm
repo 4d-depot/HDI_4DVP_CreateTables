@@ -1,0 +1,308 @@
+{
+	"destination": "detailScreen",
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onUnload",
+		"onTimer",
+		"onBeginDragOver",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tab Control": {
+					"type": "tab",
+					"top": 28,
+					"left": 18,
+					"width": 1020,
+					"height": 800,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "_TabTitles",
+					"dataSourceTypeHint": "arrayText",
+					"action": "gotoPage",
+					"events": [
+						"onClick"
+					]
+				},
+				"Trace": {
+					"type": "checkbox",
+					"text": "Trace",
+					"top": 798,
+					"left": 29,
+					"width": 117,
+					"height": 18,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.trace",
+					"sizingY": "move"
+				},
+				"ViewProAreaColumns": {
+					"type": "view",
+					"left": 336,
+					"top": 175,
+					"width": 681,
+					"height": 598,
+					"userInterface": "none",
+					"withFormulaBar": false,
+					"method": "ObjectMethods/ViewProAreaColumns.4dm",
+					"events": [
+						"onVPReady"
+					],
+					"sizingX": "grow",
+					"sizingY": "grow"
+				},
+				"ViewProAreaCharts": {
+					"type": "view",
+					"left": 188,
+					"top": 175,
+					"width": 829,
+					"height": 598,
+					"userInterface": "none",
+					"withFormulaBar": false,
+					"method": "ObjectMethods/ViewProAreaCharts.4dm",
+					"events": [
+						"onVPReady"
+					],
+					"sizingX": "grow",
+					"sizingY": "grow"
+				},
+				"ViewProAreaInvoice": {
+					"type": "view",
+					"left": 188,
+					"top": 175,
+					"width": 829,
+					"height": 598,
+					"userInterface": "none",
+					"withFormulaBar": false,
+					"method": "ObjectMethods/ViewProAreaInvoice.4dm",
+					"events": [
+						"onVPReady"
+					],
+					"sizingX": "grow",
+					"sizingY": "grow"
+				}
+			}
+		},
+		{
+			"objects": {
+				"information": {
+					"type": "input",
+					"top": 188,
+					"left": 51,
+					"width": 966,
+					"height": 480,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Infos[0].Description",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Button4": {
+					"type": "button",
+					"text": "Init table",
+					"top": 404,
+					"left": 29,
+					"width": 130,
+					"height": 29,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button4.4dm"
+				},
+				"Button5": {
+					"type": "button",
+					"text": "Next customer",
+					"top": 461,
+					"left": 31,
+					"width": 128,
+					"height": 30,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button5.4dm"
+				},
+				"information3": {
+					"type": "input",
+					"top": 64,
+					"left": 29,
+					"width": 966,
+					"height": 96,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Infos[1].Description",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Button1": {
+					"type": "button",
+					"text": "Create a table",
+					"top": 175,
+					"left": 29,
+					"width": 130,
+					"height": 29,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button1.4dm"
+				},
+				"information2": {
+					"type": "input",
+					"top": 64,
+					"left": 29,
+					"width": 966,
+					"height": 96,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Infos[2].Description",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Button": {
+					"type": "button",
+					"text": "Apply    =>",
+					"top": 392,
+					"left": 225,
+					"width": 80,
+					"height": 40,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button.4dm"
+				},
+				"information1": {
+					"type": "input",
+					"top": 64,
+					"left": 29,
+					"width": 966,
+					"height": 96,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Infos[3].Description",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"List Box": {
+					"type": "listbox",
+					"left": 36,
+					"top": 180,
+					"width": 160,
+					"height": 562,
+					"events": [
+						"onClick",
+						"onHeaderClick",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"listboxType": "collection",
+					"dataSource": "Form:C1466.fields",
+					"columns": [
+						{
+							"header": {
+								"text": "Columns",
+								"name": "Header1"
+							},
+							"name": "Column1",
+							"footer": {
+								"name": "Footer1"
+							},
+							"dataSource": "This:C1470.Field",
+							"width": 122
+						},
+						{
+							"header": {
+								"name": "Header2",
+								"text": ""
+							},
+							"name": "Column2",
+							"footer": {
+								"name": "Footer2"
+							},
+							"dataSource": "This:C1470.Display",
+							"dataSourceTypeHint": "boolean",
+							"width": 20
+						}
+					]
+				}
+			}
+		}
+	],
+	"geometryStamp": 4442,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"width": 1039,
+	"height": 829,
+	"windowMinWidth": 1039,
+	"windowMinHeight": 829
+}
